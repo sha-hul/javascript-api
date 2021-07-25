@@ -2,7 +2,7 @@
 
 // Basic for promise
 
-// let wwcd=false;
+// let wwcd=true;
 // let promise= new Promise(
 //     (resolve,reject)=>{
 //         if(wwcd){
@@ -13,7 +13,7 @@
 //         }
 //     }
 // );
-// console.log(promise);
+// console.log(promise); 
 
 // Promise very difficult
 
@@ -58,7 +58,7 @@
 // let onReject=(reject)=>{
 //     console.log(reject);
 // }
-// condition(10,0).then(onFulfill).catch(onReject);
+// condition(10,5).then(onFulfill).catch(onReject);
 
 //  Task in Promise
 
@@ -68,6 +68,29 @@
 
 // Ajax in JavaScript
 // Ajax is the techinique for update our website without reloading.It makes our website fast and dynamic
+
+let xhttp=new XMLHttpRequest();
+xhttp.onreadystatechange=function(){
+    if((this.readyState==4)&&(this.status==2)){
+        document.getElementById("mes").innerHTML=this.responseText()
+    }
+}
+xhttp.open("GET","content/hii.txt",true);
+xhttp.send();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // function loadData(){ 
 //     let xhttp=new XMLHttpRequest();
@@ -106,17 +129,132 @@
 // }
 
 // fetch API in the My JSON File
+// Fetch API
 
-function loadData(){
+// Instead of Ajax and Jquerry we are using the Fetch API
+
+// For text
+
+// function loadData(){
+// fetch("content/ajax.txt")
+// .then((response)=>response.text())
+// .then((data)=>document.getElementById("mes").innerHTML=data);
+// .catch((onReject)=>console.log("This Data is Not Found"));
+// }
+
+// For json
+
+// function loadData(){
+// fetch("https://jsonplaceholder.typicode.com/users")
+// .then((response)=>response.json())
+// .then((data)=>document.getElementById("mes").innerHTML=data)
+// .catch((onReject)=>console.log("This Data is Not Found"));
+// }
+
+// fetch API in the My JSON File
+// Fetch API
+
+// Instead of Ajax and Jquerry we are using the Fetch API
+
+// For text
+
+// function loadData(){
+// fetch("content/ajax.txt")
+// .then((response)=>response.text())
+// .then((data)=>document.getElementById("mes").innerHTML=data);
+// .catch((onReject)=>console.log("This Data is Not Found"));
+// }
+
+// For json
+
+// function loadData(){
+// fetch("https://jsonplaceholder.typicode.com/users")
+// .then((response)=>response.json())
+// .then((data)=>document.getElementById("mes").innerHTML=data)
+// .catch((onReject)=>console.log("This Data is Not Found"));
+// }
+
+// fetch API in the My JSON File
+// Fetch API
+
+// Instead of Ajax and Jquerry we are using the Fetch API
+
+// For text
+
+// function loadData(){
+// fetch("content/ajax.txt")
+// .then((response)=>response.text())
+// .then((data)=>document.getElementById("mes").innerHTML=data);
+// .catch((onReject)=>console.log("This Data is Not Found"));
+// }
+
+// For json
+
+// function loadData(){
+// fetch("https://jsonplaceholder.typicode.com/users")
+// .then((response)=>response.json())
+// .then((data)=>document.getElementById("mes").innerHTML=data)
+// .catch((onReject)=>console.log("This Data is Not Found"));
+// }
+
+// fetch API in the My JSON File
+// Fetch API
+
+// Instead of Ajax and Jquerry we are using the Fetch API
+
+// For text
+
+// function loadData(){
+// fetch("content/ajax.txt")
+// .then((response)=>response.text())
+// .then((data)=>document.getElementById("mes").innerHTML=data);
+// .catch((onReject)=>console.log("This Data is Not Found"));
+// }
+
+// For json
+
+// function loadData(){
+// fetch("https://jsonplaceholder.typicode.com/users")
+// .then((response)=>response.json())
+// .then((data)=>document.getElementById("mes").innerHTML=data)
+// .catch((onReject)=>console.log("This Data is Not Found"));
+// }
+
+// fetch API in the My JSON File
+// Fetch API
+
+// Instead of Ajax and Jquerry we are using the Fetch API
+
+// For text
+
+// function loadData(){
+// fetch("content/ajax.txt")
+// .then((response)=>response.text())
+// .then((data)=>document.getElementById("mes").innerHTML=data);
+// .catch((onReject)=>console.log("This Data is Not Found"));
+// }
+
+// For json
+
+// function loadData(){
+// fetch("https://jsonplaceholder.typicode.com/users")
+// .then((response)=>response.json())
+// .then((data)=>document.getElementById("mes").innerHTML=data)
+// .catch((onReject)=>console.log("This Data is Not Found"));
+// }
+
+// fetch API in the My JSON File
+
+function loadData() {
     fetch("content/fetch.json")
-    .then((response)=>response.json())
-    .then((data)=>console.log(data[0].name))
-    .catch(()=>console.log("This is Not Found"))
+        .then((response) => response.json())
+        .then((data) => console.log(data[0].name))
+        .catch(() => console.log("This is Not Found"))
 }
 // async and await in JavaScript
 
 // The word "async" before the function means that function always returns the promise .
 
-async function data(){
+async function data() {
 
 }
